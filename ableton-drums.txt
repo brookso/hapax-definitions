@@ -27,12 +27,12 @@ INCHAN NULL
 # NAME supports all alphanumeric ASCII, and ' ', '_', '-', '+' - can also be NULL
 # Please note this section will be discarded for tracks which are not DRUM tracks
 [DRUMLANES]
-1:NULL:10:60 Kick
-2:NULL:10:61 Snare
-3:NULL:10:62 CHat
-4:NULL:10:63 OHat
-5:NULL:10:64 HTom
-6:NULL:10:65 LTom
-7:NULL:10:66 Ride
-8:NULL:10:67 Perc
+1:NULL:10:36 Kick
+2:NULL:10:37 Snare
+3:NULL:10:38 CHat
+4:NULL:10:39 OHat
+5:NULL:10:40 HTom
+6:NULL:10:41 LTom
+7:NULL:10:42 Ride
+8:NULL:10:43 Perc
 [/DRUMLANES]
