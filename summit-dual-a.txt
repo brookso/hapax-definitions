@@ -1,7 +1,7 @@
 VERSION 1 # Currently, this should only be 1.
 
 # Supports all alphanumeric ASCII, and ' ', '_', '-', '+' - can also be NULL
-TRACKNAME Summit Dual A
+TRACKNAME Summit A
 
 # Can be POLY, DRUM, MPE, or NULL
 TYPE POLY
