@@ -1,0 +1,68 @@
+VERSION 1 # Currently, this should only be 1.
+
+# Supports all alphanumeric ASCII, and ' ', '_', '-', '+' - can also be NULL
+TRACKNAME Circt Trax
+
+# Can be POLY, DRUM, MPE, or NULL
+TYPE DRUM
+
+# Can be A, B, C, D, USBD, USBH, CVGx (x between 1&4), CVx, Gx, or NULL
+OUTPORT USBD
+
+# Can be x (between 1-16), or NULL -- this is ignored if output port is not MIDI
+OUTCHAN 10
+
+# Can be NONE, ALLACTIVE, A, B, USBH, USBD, CVG, or NULL
+INPORT NULL
+
+# Can be x (between 1-16), ALL, or NULL. This definition will be ignored if INPORT is NONE, ALLACTIVE or CVG
+INCHAN NULL
+
+# DRUMLANES
+# Syntax: ROW:TRIG:CHAN:NOTENUMBER NAME
+# ROW must be between 1 and 8
+# TRIG can be between 0 and 127, or NULL
+# CHAN can be a number between 1 and 16, Gx, CVx, CVGx (x between 1 and 4), or NULL
+# NOTENUMBER can be between 0 and 127, or NULL
+# NAME supports all alphanumeric ASCII, and ' ', '_', '-', '+' - can also be NULL
+# Please note this section will be discarded for tracks which are not DRUM tracks
+[DRUMLANES]
+1:NULL:10:60 Kick
+2:NULL:10:62 Snare
+3:NULL:10:64 CHat
+4:NULL:10:65 OHat
+[/DRUMLANES]
+
+# CC
+# Syntax: CC_NUMBER NAME or CC_NUMBER:DEFAULT=xx NAME
+# DEFAULT_VALUE must be a valid number between 0 and 127
+[CC]
+8:0 Drm1 Patch
+12:0 Drm1 Level
+14:64 Drm1 Pitch
+15:0 Drm1 Decay
+16:0 Drm1 Dist
+17:64 Drm1 EQ
+77:64 Drm1 Pan
+18:0 Drm2 Patch
+23:0 Drm2 Level
+34:64 Drm2 Pitch
+40:0 Drm2 Decay
+42:0 Drm2 Dist
+43:64 Drm2 EQ
+78:64 Drm2 Pan
+44:0 Drm3 Patch
+45:0 Drm3 Level
+46:64 Drm3 Pitch
+47:0 Drm3 Decay
+48:0 Drm3 Dist
+49:64 Drm3 EQ
+79:64 Drm3 Pan
+50:0 Drm4 Patch
+53:0 Drm4 Level
+55:64 Drm4 Pitch
+57:0 Drm4 Decay
+61:0 Drm4 Dist
+76:64 Drm4 EQ
+80:64 Drm4 Pan
+[/CC]
